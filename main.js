@@ -1,3 +1,17 @@
+run()
+
+function run() {
+	
+	if (process.argv.length < 4) {
+		console.log("Invalid input");
+	} else {
+		//Get input from command line arguments
+		const s1 = process.argv[2];
+		const s2 = process.argv[3];
+		
+		console.log(mappingExists(s1, s2));
+	}
+}
 
 function mappingExists(str1, str2) {
 	const len1 = str1.length;
