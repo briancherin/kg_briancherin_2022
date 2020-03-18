@@ -33,7 +33,7 @@ function mappingExists(str1, str2) {
 				return false;			//The mapping does not exist
 			}
 		} else {						//If this character does not have a mapping yet
-			map.set(str1.charAt(i), str2.charAt(i));	//Save what character it maps to
+			map.set(c1, c2);	//Save what character it maps to
 		}
 	}
 	
